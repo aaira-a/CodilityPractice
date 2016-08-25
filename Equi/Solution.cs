@@ -15,9 +15,14 @@ namespace Equi
             var leftSum = 0;
             var rightSum = 0;
 
-            if (length <= 1)
+            if (length == 0)
             {
                 return -1;
+            }
+
+            else if (length == 1)
+            {
+                return 0;
             }
 
             for (int i=0; i<length; i++)

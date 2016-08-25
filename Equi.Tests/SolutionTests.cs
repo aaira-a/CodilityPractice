@@ -13,10 +13,18 @@ namespace Equi.Tests
         }
 
         [Fact]
-        public void OneElement_returnsNegativeOne()
+        public void OneElement_returnsZero()
         {
             var result = Solution.solution(new int[] { 7 });
+            Assert.Equal(0, result);
+        }
+
+        [Fact]
+        public void ZeroElement_returnsNegativeOne()
+        {
+            var result = Solution.solution(new int[] { });
             Assert.Equal(-1, result);
         }
+
     }
 }
