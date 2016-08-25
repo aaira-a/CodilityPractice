@@ -11,5 +11,12 @@ namespace Equi.Tests
             var result = Solution.solution(new int[]{5, 2, 5});
             Assert.Equal(1, result);
         }
+
+        [Fact]
+        public void OneElement_returnsNegativeOne()
+        {
+            var result = Solution.solution(new int[] { 7 });
+            Assert.Equal(-1, result);
+        }
     }
 }

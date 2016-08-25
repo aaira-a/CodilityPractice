@@ -15,6 +15,11 @@ namespace Equi
             var leftSum = 0;
             var rightSum = 0;
 
+            if (length <= 1)
+            {
+                return -1;
+            }
+
             for (int i=0; i<length; i++)
             {
                 var currentElement = A[i];
