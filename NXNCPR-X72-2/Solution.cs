@@ -10,7 +10,7 @@ namespace NXNCPR_X72_2
     {
         public static int solution(string s)
         {
-            var number = Convert.ToInt32(s, 2);
+            var number = Convert.ToUInt64(s, 2);
 
             var steps = 0;
 
